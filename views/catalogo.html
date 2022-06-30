@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MyU Indumentaria</title>
+	<!-- css -->
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="contenedor-cat">
+		<header>
+			<nav id="mainNav-cat">
+				<a href="../index.html">
+				<img src="../img/logo.svg" alt="logo de pagina" class="logo">
+				</a>
+				<ul>
+					<li>
+						<a href="../views/catalogo.html">Catalogo</a>
+					</li>
+					<li>
+						<a href="../views/nosotros.html">Nosotros</a>
+					</li>
+					<li>
+						<a href="../views/ofertas.html">Ofertas</a>
+					</li>
+					<li>
+						<a href="../views/contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="fotos-cat" class="imagenes-cat">
+				<img src="../img/c1.png" alt="articulo de indumentaria">
+				<img src="../img/imgcat.jpeg" alt="articulo de indumentaria">
+				<img src="../img/c5.jpg" alt="articulo de indumentaria">
+				<img src="../img/c3.jpg" alt="articulo de indumentaria">
+			</section>
+			<section id="info-cat">
+				<form action="envio.php">
+						<div class="bg text-center espacio p__articulo">
+							<legend class="text-bold">¿Cual será su compra?</legend>
+							<label for="campera">Campera beige</label>
+							<input type="checkbox" id="campera" value="campera">
+							<br>
+							<label for="saco">Saco negro</label>
+							<input type="checkbox" id="saco" value="saco">
+							<br>
+							<label for="pulover">Pulover gris</label>
+							<input type="checkbox" id="pulover" value="pulover">
+							<br>
+							<label for="remera">Remera blanca</label>
+							<input type="checkbox" id="remera" value="remera">
+						</div>
+
+						<div class="bg text-center espacio p__articulo">
+							<legend class="text-bold">Información de envío</legend>
+							<label for="local">Retiro en el local</label>
+							<input type="radio" id="local" value="local" name="envio">
+							<br>
+							<label for="casa">Envio a mi domicilio</label>
+							<input type="radio" id="casa" value="casa" name="envio">
+							<br>
+							<label for="localidad">Provincia</label>
+							<select name="" id="localidad">
+								<option value="CABA">Ciudad de Buenos Aires</option>
+								<option value="BSAS">Provicia de Buenos Aires</option>
+								<option value="interior">Interior del pais</option>
+							</select>
+						</div>
+
+						<div class="bg text-center espacio p__articulo">
+							<label for="mensaje">Deje alguna aclaración si la encuentra necesaria</label>
+							<br>
+							<textarea name="" id="mensaje" cols="30" rows="10" class="bg"></textarea>
+							<br>
+							<input type="reset" value="Cancelar">
+							<input type="submit" value="Enviar">
+						</div>
+				</form>
+			</section>
+		</main>
+		<footer class="text-center pie" id="pie-cat">
+			<h3 class="pie__titulo--md">Contacto:</h3>
+			<a href="https://www.instagram.com" target="_blank">
+				<img src="../img/ig.png" alt="foto de la red social instagram" class="pie__icon">
+			</a>
+			<a href="https://www.twitter.com" target="_blank">
+				<img src="../img/tw.png" alt="foto de la red social twitter" class="pie__icon">
+			</a>
+		</footer>
+	</div>
+</body>
+</html>
